@@ -21,17 +21,10 @@ h1 {
 	font-family: times, serif;
 	font-size: 1.5rem;
 	margin-left: 1rem;
-	background-color: #00712b;
+	background-color:var(--colour_three);
 	
 }
 
-h2 {
-	font-size: 1.2rem;
-	color: #fefdfd;
-	text-align: center;
-	margin: 1rem;
-	background-color: #00712b;
-}
 
 #menu {
 	font-size: 2rem;
@@ -55,7 +48,7 @@ h2 {
 	flex-direction: column;
 	justify-content: space-around;
 	list-style: none;
-	background-color: #00712b;
+	background-color: var(--colour_three);
 	color: #fff;
 }
 
@@ -64,12 +57,11 @@ h2 {
 	padding: 1rem;
 	text-align: center;
 	text-decoration: none;
-	color: #fff;
+	color: var(--colour_two);
 }
 
 .navigation a:hover {
-	background-color: #bbb;
-	color: #333;
+	background-color: var(--colour_four);
 	font-weight: 700;
 }
 
