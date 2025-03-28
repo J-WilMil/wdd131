@@ -1,0 +1,86 @@
+:root {
+    --background-color: rgba(197, 2, 2, 0.5); 
+    --text-color: white;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    background-size: cover;
+    background-position: center;
+}
+
+header picture img {
+    width: 100%;
+    height: auto;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0.5rem;
+    background-color: var(--background-color);
+    display: inline-block;
+    border-radius: 5px;
+}
+
+main {
+    padding: 1rem;
+}
+
+footer {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    background-color: rgba(3, 1, 1, 0.2); 
+    border-radius: 5px;
+}
+
+.weather, .info {
+    position: relative;
+    margin: 1rem auto;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.7); 
+    text-align: center;
+    color: white;
+}
+
+.weather h2, .info h2 {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+
+.weather p, .info p {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.2); 
+    border-radius: 5px;
+}
+
+.weather img {
+    max-width: 100%; 
+    height: auto;
+    margin: 0.5rem auto;
+    display: block;
+}
+
+@media screen and (max-width: 799px) {
+    header h1 {
+        position: relative;
+        margin-top: 0.5rem;
+        background-color: var(--background-color);
+    }
+}

@@ -1,0 +1,56 @@
+header {
+    position: relative;   
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+}
+
+header h1 {
+    top: 20px;
+    left: 20px;
+    margin: 0;
+    padding: 0.5rem 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    color: white;
+}
+
+.weather, .info {
+    position: absolute;
+    z-index: 2;
+    margin: 1rem auto;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.7); 
+    text-align: center;
+    color: white;
+    max-width: 400px;
+}
+
+.info {
+    z-index: 3;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media screen and (max-width: 768px) {
+    .weather, .info {
+        position: relative;
+        margin: 1rem auto;
+        max-width: 100%;
+        top: auto;
+        left: auto;
+        right: auto;
+        transform: none;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .weather img {
+        max-width: 100%;
+    }
+}
