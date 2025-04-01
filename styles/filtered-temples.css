@@ -1,0 +1,98 @@
+:root{
+    --colour_one: #362c5f; 
+    --colour_two: #fefdfd; 
+    --colour_three: #00712b; 
+    --colour_four: #d3961d; 
+
+}
+
+body{
+    max-width: 840px;
+    margin: 0 auto;
+    background-color: var(--colour_one);
+    padding: 1rem;
+    font-family: "Neuton", serif;
+    line-height: 1.6;
+    color: var(--colour_two);
+}
+
+h1 {
+	text-align: center;
+	font-family: times, serif;
+	font-size: 1.5rem;
+	margin-left: 1rem;
+	background-color:var(--colour_three);
+	
+}
+
+
+#menu {
+	font-size: 2rem;
+	border: 0;
+	background: none;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "🍔";
+}
+
+#menu.show::before {
+	content: "❌";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	list-style: none;
+	background-color: var(--colour_three);
+	color: #fff;
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: var(--colour_two);
+}
+
+.navigation a:hover {
+	background-color: var(--colour_four);
+	font-weight: 700;
+}
+
+
+.show a {
+	display: block;
+}
+
+
+section {margin: 1rem auto; max-width: 960px; padding: .5rem;}
+
+
+.gallery {
+	display: grid; 
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+	grid-gap: 25px;
+	place-items: center;
+}
+
+footer p{
+	display: flex;    
+	justify-content: center;
+}
+
+footer {
+    background-color: var(--colour_three); 
+}
+
+figure {
+	border: 2px solid var(--colour_three); 
+	border-radius: 8px; 
+    padding: 10px;
+    margin: 15px;
+}
