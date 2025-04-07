@@ -23,47 +23,49 @@
     <main>
         <h1>Product Review</h1>
         <form method="get" action="review.html">
-        <label for="product">Product Name:</label>
-        <select id="product" name="product" required>
-            <option value="" disabled selected>Select a Product ...</option>
-        </select>
+            <label for="product">Product Name:</label>
+            <select id="product" name="product" required>
+                <option value="" disabled selected>Select a Product ...</option>
+            </select>
 
-        <fieldset>
-            <legend>Overall Rating:</legend>
-            <div class="rating">
-            <input type="radio" id="star5" name="rating" value="5" required />
-            <label for="star5">&#9733;</label>
-            <input type="radio" id="star4" name="rating" value="4" />
-            <label for="star4">&#9733;</label>
-            <input type="radio" id="star3" name="rating" value="3" />
-            <label for="star3">&#9733;</label>
-            <input type="radio" id="star2" name="rating" value="2" />
-            <label for="star2">&#9733;</label>
-            <input type="radio" id="star1" name="rating" value="1" />
-            <label for="star1">&#9733;</label>
-            </div>
-        </fieldset>
+            <fieldset>
+                <legend>Overall Rating:</legend>
+                <div class="rating">
+                <input type="radio" id="star5" name="rating" value="5" required />
+                <label for="star5">&#9733;</label>
+                <input type="radio" id="star4" name="rating" value="4" />
+                <label for="star4">&#9733;</label>
+                <input type="radio" id="star3" name="rating" value="3" />
+                <label for="star3">&#9733;</label>
+                <input type="radio" id="star2" name="rating" value="2" />
+                <label for="star2">&#9733;</label>
+                <input type="radio" id="star1" name="rating" value="1" />
+                <label for="star1">&#9733;</label>
+                </div>
+            </fieldset>
 
-        <label for="install-date">Date Installed:</label>
-        <input type="date" id="install-date" name="installDate" required />
+            <label for="install-date">Date Installed:</label>
+            <input type="date" id="install-date" name="installDate" required />
 
-        <fieldset>
-            <legend>Useful Features:</legend>
-            <input type="checkbox" id="feature1" name="features" value="Fast" />
-            <label for="feature1">Fast</label><br />
-            <input type="checkbox" id="feature2" name="features" value="Reliable" />
-            <label for="feature2">Reliable</label><br />
-            <input type="checkbox" id="feature3" name="features" value="Affordable" />
-            <label for="feature3">Affordable</label>
-        </fieldset>
+            <fieldset>
+                <legend>Useful Features:</legend>
+                <input type="checkbox" id="feature1" name="features" value="Fast" />
+                <label for="feature1">Fast</label><br />
+                <input type="checkbox" id="feature2" name="features" value="Reliable" />
+                <label for="feature2">Reliable</label><br />
+                <input type="checkbox" id="feature3" name="features" value="Affordable" />
+                <label for="feature3">Affordable</label>
+                <input type="checkbox" id="feature4" name="features" value="Design" />
+                <label for="feature3">Design</label>
+            </fieldset>
 
-        <label for="review">Written Review:</label>
-        <textarea id="review" name="writtenReview" rows="5"></textarea>
+            <label for="review">Written Review:</label>
+            <textarea id="review" name="writtenReview" rows="5"></textarea>
 
-        <label for="username">Your Name:</label>
-        <input type="text" id="username" name="username" />
+            <label for="username">Your Name:</label>
+            <input type="text" id="username" name="username" />
 
-        <input type="submit" value="Submit Review" />
+            <input type="submit" value="Submit" />
         </form>
     </main>
 
